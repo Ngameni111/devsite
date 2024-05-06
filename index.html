@@ -15,11 +15,15 @@
         <p><span>Your</span>Dish</p>
     </div>
     <ul class="menu">
-        <li><a href="#">Accueil</a></li>
-        <li><a href="#">Menu</a></li>
-        <li><a href="#">A propos</a></li>
-        <li><a href="#">Réservation</a></li>
+        <li><a href="#home">Accueil</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about_us">A propos</a></li>
+        <li><a href="#reservation">Réservation</a></li>
     </ul>
+
+    <!-- menu responsible -->
+    <div class="toggle_menu"></div>
+
 </header>
 <!-- section accueil home  -->
 <section id="home">
@@ -103,5 +107,101 @@
 
 <!-- section comments -->
 
+<section class="comment_section">
+    <h4 class="mini_title">Comments</h4>
+    <h2 class="title">What People this about Us</h2>
+    <div class="comments">
+        <div class="comment">
+            <div>
+                <img src="images/img1.png">
+                <h4>Smith Jonhson</h4>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum esse rerum exercitationem, saepe repellendus consectetur. Natus quaerat, voluptates eveniet voluptatem totam minus saepe quibusdam, quasi illum facilis ipsam voluptatibus. Temporibus.
+
+            </p>
+        </div>
+        <div class="comment">
+            <div>
+                <img src="images/img1.png">
+                <h4>Smith Jonhson</h4>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum esse rerum exercitationem, saepe repellendus consectetur. Natus quaerat, voluptates eveniet voluptatem totam minus saepe quibusdam, quasi illum facilis ipsam voluptatibus. Temporibus.
+                
+            </p>
+        </div>
+        <div class="comment">
+            <div>
+                <img src="images/img1.png">
+                <h4>Smith Jonhson</h4>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum esse rerum exercitationem, saepe repellendus consectetur. Natus quaerat, voluptates eveniet voluptatem totam minus saepe quibusdam, quasi illum facilis ipsam voluptatibus. Temporibus.
+                
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- section reservation -->
+
+<section id="reservation">
+    <h4 class="mini_title">Reservation</h4>
+    <h2 class="title">Fill this to make a reservation</h2>
+    <form action="">
+        <label>Your Name</label>
+        <input type="text">
+        <label>Your Email</label>
+        <input type="email">
+        <label>Your Number</label>
+        <input type="text">
+        <label>Reservation date</label>
+        <input type="date">
+        <input type="submit" value="Make The Reservation">
+    </form>
+</section>
+
+<!-- footer -->
+
+<footer>
+    <div class="services_list">
+        <div class="service">
+            <img src="images/clock.png">
+            <h2>Ouverture</h2>
+            <p>10h30 à 23h45</p>
+            <p>23h45 à 9h30</p>
+        </div>
+        <div class="service">
+            <img src="images/pin.png">
+            <h2>Adresse</h2>
+            <p>France-Paris</p>
+            <p>Cameroun-Yaounde</p>
+        </div>
+        <div class="service">
+            <img src="images/email.png">
+            <h2>Email</h2>
+            <p>email@gmail.com</p>
+            <p>Your .dish@gmail.com</p>
+        </div>
+
+        <div class="service">
+            <img src="images/email.png">
+            <h2>Number</h2>
+            <p>693-10-81-21</p>
+            <p>677-44-23-07</p>
+        </div>
+
+        <hr>
+    </div>
+    <p class="footer_text">Réalisé par <span>Boniface Ngameni</span> Tous droits réservés.</p>
+</footer>
+
+<script>
+    var small_menu = document.querySelector('.toggle_menu')
+    var menu = document.querySelector('.menu')
+
+    small_menu.onclick = function(){
+        small_menu.classList.toggle('active')
+        menu.classList.toggle('responsive')
+    }
+</script>
 </body>
 </html>
